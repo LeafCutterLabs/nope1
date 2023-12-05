@@ -11,6 +11,14 @@
 		"pid": "0x0007",
 		"device_version": "0.0.1"
 	},
+	  "encoder": {
+    "rotary": [
+      {"pin_a": "GP24", "pin_b": "GP25", "resolution": 4},
+	  {"pin_a": "GP23", "pin_b": "GP22", "resolution": 4},
+	  {"pin_a": "GP28", "pin_b": "GP29", "resolution": 4},
+	  {"pin_a": "GP20", "pin_b": "GP21", "resolution": 4}
+    ]
+	},
 	"matrix_pins": {
         "cols": ["GP7", "GP6", "GP5", "GP4", "GP3", "GP13", "GP12", "GP11", "GP10", "GP16"],
         "rows": ["GP2", "GP8", "GP9", "GP14", "GP15"]

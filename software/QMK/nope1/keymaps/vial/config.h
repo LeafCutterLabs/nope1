@@ -1,7 +1,9 @@
-// Copyright 2022 Stefan Kerkmann
-// SPDX-License-Identifier: GPL-2.0-or-later
+/* SPDX-License-Identifier: GPL-2.0-or-later */
 
 #pragma once
+
+#define MIDI_ADVANCED
+#define VIAL_KEYBOARD_UID {0x8C, 0xBC, 0xEA, 0x9B, 0xFD, 0x3F, 0x8B, 0xE0}
 
 #define DEBUG_MATRIX_SCAN_RATE
 
@@ -17,5 +19,9 @@
 #define ENCODERS_PAD_B { GP25, GP22, GP29, GP21}
 #define ENCODER_RESOLUTION 4
 
-#define WS2812_DI_PIN GP15
-#define RGB_MATRIX_LED_COUNT 57
+//#define WS2812_DI_PIN GP15
+//#define RGB_MATRIX_LED_COUNT 57
+
+//#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+//#define RGB_MATRIX_KEYPRESSES
+

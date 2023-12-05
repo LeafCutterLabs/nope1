@@ -11,4 +11,4 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no       # Enable keyboard RGB underglow
 WS2812_DRIVER = vendor
 AUDIO_ENABLE = no           # Audio output
-ENCODER_ENABLE = no        # Enable rotary encoders
+ENCODER_ENABLE = yes        # Enable rotary encoders

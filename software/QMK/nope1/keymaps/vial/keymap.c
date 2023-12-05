@@ -258,13 +258,20 @@ void matrix_scan_user(void) {
 void led_set_user(uint8_t usb_led) {
 
 }
-
+/*
+void housekeeping_task_user(void) { 
+    rgblight_setrgb_at(RGB_ORANGE, 0);
+    rgblight_setrgb_at(RGB_WHITE, 18);
+	rgblight_setrgb_at(RGB_PURPLE, 19);
+    rgblight_setrgb_at(RGB_PINK, 37);
+	rgblight_setrgb_at(RGB_ORANGE, 38);
+    rgblight_setrgb_at(RGB_WHITE, 56);
+	
+}
+*/
 #if defined(ENCODER_MAP_ENABLE)
-const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [0] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD) },
-    [1] = { ENCODER_CCW_CW(KC_2, KC_3) },
-	[2] = { ENCODER_CCW_CW(KC_4, KC_5) },
-    [3] = { ENCODER_CCW_CW(MI_A3, MI_A4) }
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+    [0] = { ENCODER_CCW_CW(KC_1, KC_2), ENCODER_CCW_CW(KC_3, KC_4), ENCODER_CCW_CW(KC_5, KC_6), ENCODER_CCW_CW(KC_7, KC_8) },
 };
 #endif
 
